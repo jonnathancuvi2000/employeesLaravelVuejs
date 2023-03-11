@@ -81,3 +81,11 @@ npm install popper.js -D
 https://stackoverflow.com/questions/45660672/webpack-fails-to-load-bootstrap-v4-0-0-beta
 
 finally I have to install npm i vue-router@3.5.1 and npm install bootstrap@4.6.0 to work (just cheack package.json)
+
+local datata base
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=employees
+DB_USERNAME=root
+DB_PASSWORD=

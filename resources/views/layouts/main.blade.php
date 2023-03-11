@@ -18,6 +18,11 @@
     <!-- Custom styles for this template-->
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
 
+    <style>
+        img{
+            width: 50px;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -30,8 +35,10 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                <div class="sidebar-brand-icon">
+                    <!-- <i class="fas fa-laugh-wink"></i> -->
+                    <img class="img" src="{{ asset('images/logowhiite3.png') }}" alt="">
+
                 </div>
                 <div class="sidebar-brand-text mx-3">Dashboard</div>
             </a>
@@ -47,18 +54,31 @@
             </li>
             <hr class="sidebar-divider my-0"> -->
 
+            <!-- below code was no before I added -->
+            <li class="nav-item">
+                <!-- I used "/employees" b ut I can use any word, because I put any en he web file, where I call the page -->
+                <a class="nav-link" href="/home">                   
+                    <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                    <i class="fas fa-regular fa-house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <hr class="sidebar-divider my-0">
+
+
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <!-- I used "/employees" b ut I can use any word, because I put any en he web file, where I call the page -->
-                <a class="nav-link" href="/employees"> 
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                <a class="nav-link" href="/employees">
+                    <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                    <i class="fas fa-regular fa-server"></i>
                     <span>Gestor de Empleados</span>
                 </a>
             </li>
 
             <!-- Divider -->
             <!-- <hr class="siroutedebar-divider my-0"> -->
-            <hr class="sidebar-divider my-0"> 
+            <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
